@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Grid</title>
+    </head>
+    <body>
+        <style>
+            .container{
+                display: grid;
+                grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+                grid-gap: 30px;
+                grid-auto-rows: 100px;
+            
+            }
+            .items{
+                border:5px solid purple;
+                background-color: rgb(179, 115, 239);
+                border-radius: 5px;
+            }
+            #item-2{
+                grid-row-start:1;
+                grid-row-end: 3;
+            }
+            #item-6{
+                grid-row-start: 3;
+                grid-row-end: 5;
+            }
+            #item-1{
+                grid-row-start: 1;
+                grid-row-end: 5;
+            }
+        </style>
+        <div class="container">
+            <div class="items" id="item-1">box 1</div>
+            <div class="items" id="item-2">box 2</div>
+            <div class="items" id="item-3">box 3</div>
+            <div class="items">box 4</div>
+            <div class="items">box 5</div>
+            <div class="items" id="item-6">box 6</div>
+            <div class="items">box 7</div>
+        </div>
+    </body>
+</html>

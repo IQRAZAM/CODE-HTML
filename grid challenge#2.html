@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>challenge-2</title>
+    </head>
+    <body>
+        <style>
+            .content{
+                display: grid;
+                grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+                grid-gap: 10px;
+                grid-auto-rows: 400px;
+            }
+            .nax{
+                border: 4px solid rgb(5, 88, 8);
+                background-color: #70ed93;
+                border-radius: 6px;
+            }
+            #sp-1{
+                grid-row-start: 1;
+                grid-row-end: 4;
+                font-size: 7em;
+                color: rgb(5, 88, 8);
+            }
+            #sp-2{
+                grid-column-start: 2;
+                grid-column-end: 6;
+                font-size: 12em;
+                color: rgb(5, 88, 8);;
+            }
+            #sp-3{
+                grid-row-start: 2;
+                grid-row-end: 3;
+                font-size: 7em;
+                color: rgb(5, 88, 8);
+                grid-column-start: 2;
+                grid-column-end: 4;
+            }
+            #sp-4{
+                grid-row-start:2;
+                grid-row-end: 3;
+                font-size: 7em;
+                color: rgb(5, 88, 8);
+            }
+            #sp-5{
+                grid-column-start: 2;
+                grid-column-end: 6;
+                font-size: 16em;
+                color: rgb(5, 88, 8);
+            }
+        </style>
+        <div class="content">
+            <div class="nax" id="sp-1">NAV</div>
+            <div class="nax" id="sp-2">HEADER</div>
+            <div class="nax" id="sp-3">ARTICLE</div>
+            <div class="nax" id="sp-4">ADD</div>
+            <div class="nax" id="sp-5">FOOTER</div>
+        </div>
+    </body>
+</html>
